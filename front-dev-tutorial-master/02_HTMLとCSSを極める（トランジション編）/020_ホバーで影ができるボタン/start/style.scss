@@ -1,0 +1,27 @@
+$cWhite: white;
+$cBlack: black;
+
+#container {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px 0;
+  background-color: $cWhite;
+  border: 2px solid $cBlack;
+
+  a {
+    display: block;
+    padding: 10px 40px;
+    color: $cBlack;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+  }
+
+  &.float {
+    & a:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0..5);
+    }
+  }
+}
